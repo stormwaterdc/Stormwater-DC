@@ -1,0 +1,124 @@
+site_name: Stormwater in District of Columbia
+# site url: https://example.com/
+# site_description: Learn about using DOEE's Surface and Groundwater System
+
+extra_css:
+    - css/extra.css
+extra_javascript:
+  - docs/overrides/javascript/mathjax.js
+  - docs/overrides/javascript/externalDOEElinks.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+theme:
+      name: material
+      palette:
+            primary: '#248C43' #'#187227'
+            accent: 'blue'
+      custom_dir: docs/overrides
+      features:
+      - navigation.instant
+#      - navigation.tracking
+     # - navigation.sections # Getting rid of this will allow for collapsing under level 2 in nav
+      - navigation.indexes # Allows for overview pages at start of sections to be excluded from side bar
+#      - toc.integrate # Makes the table of contents integrated into the nav bar (makes page move around too much)
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.top
+#      - navigation.tracking # anchor tracking
+      - search.suggest
+#      - search.highlight
+      - search.share
+#      logo: "https://octo.quickbase.com/up/bjezqk3qc/g/rch/eg/va/stars-and-bars.jpg"
+      logo: overrides/icons/homepage/DOEE-logo-DC-Flag_Horizontal.png
+#      favicon: src-raindrop-notext-favicon.png
+      font:
+        text: Segoe UI
+
+# Plugins
+plugins:
+  - search
+  - open-in-new-tab
+
+markdown_extensions:
+  - toc:
+      title: On this Page
+      toc_depth: 2
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - admonition
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.tasklist: # for custom checkboxes
+        custom_checkbox: true
+        clickable_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+# page tree
+nav:
+      - Return to the SGS: https://doee.dc.gov/sgs
+#      - Getting Started:
+#          - Getting-Started/index.md
+#          - Create & Manage Your SGS Account: User-Guides/SGS-User-Guide/03-create-manage-account.md
+#          - Reset Password: User-Guides/SGS-User-Guide/03a-reset-password.md
+#          - Get & Share Access:
+#              - User-Guides/Agent-Staff-Guide/index.md
+#              - Give or Get Access to Sites & Plans: Getting-Started/share-access-to-sites-plans.md
+#          - System Guidelines: User-Guides/SGS-User-Guide/intro.md
+#      - How to Pay Fees:
+#          - User-Guides/Fees/index.md
+##      - Frequently Asked Questions: User-Guides/SGS-FAQ/SGS_FAQ_2022.md
+##      - Self-Inspection Self-Reporting (SISR):
+##          - User-Guides/SISR/index.md
+#      - SRCs & Offv:
+#          - User-Guides/Stormwater-Retention-Credit-Program/index.md
+#          - Transfer SRCs: User-Guides/Stormwater-Retention-Credit-Program/Transfer-SRCs-Guide/TransferSRCsGuide.md
+#          - Use SRCs: User-Guides/Stormwater-Retention-Credit-Program/Use-SRCs-Guide/Use_SRCs-SGS_User_Guide.md
+#      - Trainings: https://doee.dc.gov/node/689232 #https://www.youtube.com/playlist?list=PLwVWUpQJ7PLhcuimZpMC2v-wINRbgbLkf
+#          - Certify SRCs:
+#              - Application Checklist: User-Guides/Stormwater-Retention-Credit-Program/Certify-SRCs-Guide/Certify-SRCs_Application-Checklist.md
+#              - SGS Application Guide: User-Guides/Stormwater-Retention-Credit-Program/Certify-SRCs-Guide/Certify-SRCs_SGS-Application-Guide.md
+#              - Maintenance Agreement Guide: User-Guides/Stormwater-Retention-Credit-Program/Certify-SRCs-Guide/Certify-SRCs_Maintenance-Agreement-Guide.md
+    #            - Stormwater Retention Credit Trading Program: User-Guides/SGS-User-Guide/08-stormwater-retention-credit-trading-program.md
+#      - Plans:
+#          - User-Guides/Plans/index.md
+#              - Permit Review: User-Guides/SGS-User-Guide/05-using-sgs-for-permit-review.md
+#          - Erosion & Sediment Control (ESC): User-Guides/Plans/Erosion-Sediment-Control-Plans/06-submit-a-soil-erosion-and-sediment-control-plan.md
+#          - Stormwater Management (SWMP): User-Guides/Plans/Stormwater-Management-Plans/07-submit-a-stormwater-management-plan.md
+#          - Green Area Ratio (GAR): User-Guides/Plans/Erosion-Sediment-Control-Plans/06-submit-a-soil-erosion-and-sediment-control-plan.md
+    #            - Floodplain:
+    #            - Wells:
+#      - Fees:
+#          - User-Guides/Fees/index.md
+#      - Inspections:
+#          - User-Guides/Inspections/index.md
+#      - RiverSmart Rewards: User-Guides/SGS-User-Guide/04-apply-for-riversmart-rewards.md
+#      - Program Contacts: User-Guides/SGS-User-Guide/02-program-contacts.md
+#          - Acronyms: User-Guides/SGS-User-Guide/01-acronyms.md
+#      - Training Videos:
+#          - User-Guides/Training-Videos/index.md
+#      - Reports:
+#          - Overview: Reporting/reports-landing-page.md
+#          - SRC Program Report: Reporting/Tableau-embed.md #https://doee.dc.gov/service/src-aggregator-startup-grants
+#          - ILF Fund Report: Reporting/Tableau-embed.md
+
+
+#      - Stormwater Management Guidebook: https://octo.quickbase.com/up/bjkxxcfcp/g/rfp/eg/va/index.html
+#          - Acknowledgements: Stormwater-Guidebook/index.md
+#          - Chapter 1 Introduction to the Stormwater Management Guidebook: Stormwater-Guidebook/chapter-1.md
+#          - Chapter 2 Minimum Control Requirements: Stormwater-Guidebook/SWMG-Equations-Table.md
+#          - Chapter 3 Stormwater Best Management Practices (BMPs): Stormwater-Guidebook/chapter-3.md
+#          - Chapter 4 Selecting and Locating the Most Effective Stormwater Best Management Practice System: Stormwater-Guidebook/chapter-4.md
+#          - Chapter 5 Administration of Stormwater Management Rules: Stormwater-Guidebook/chapter-5.md
+#          - Chapter 6 Use of Off-Site Retention by Regulated Sites: Stormwater-Guidebook/chapter-6.md
+#          - Chapter 7 Generation, Certification, Trading, and Retirement of Stormwater Retention Credits: Stormwater-Guidebook/chapter-7.md
+
