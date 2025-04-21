@@ -1,0 +1,77 @@
+site_name: Stormwater in District of Columbia
+#site_url: https://mydomain.org/mysite
+site_description: Learn about using DOEE's Surface and Groundwater System
+extra_css:
+    - css/extra.css
+extra_javascript:
+  - javascript/mathjax.js
+  - javascript/externalDOEElinks.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+theme:
+      name: material
+      palette:
+            primary: custom
+            accent: 'blue'
+      custom_dir: docs/overrides
+      features:
+      - navigation.instant
+#      - navigation.tracking
+     # - navigation.sections # Getting rid of this will allow for collapsing under level 2 in nav
+      - navigation.indexes # Allows for overview pages at start of sections to be excluded from side bar
+#      - toc.integrate # Makes the table of contents integrated into the nav bar (makes page move around too much)
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.top
+#      - navigation.tracking # anchor tracking
+      - search.suggest
+#      - search.highlight
+      - search.share
+#      logo: "https://octo.quickbase.com/up/bjezqk3qc/g/rch/eg/va/stars-and-bars.jpg"
+      logo: overrides/icons/homepage/DOEE-logo-DC-Flag_Horizontal.png
+#      favicon: src-raindrop-notext-favicon.png
+      font:
+        text: Segoe UI
+#
+## page tree
+nav:
+      - Return to the SGS: https://doee.dc.gov/sgs
+#      - Getting Started:
+#          - Getting-Started/index.md
+#          - Create & Manage Your SGS Account: Getting-Started/create-manage-account.md
+#          - Reset Password: Getting-Started/reset-password.md
+#          - Get & Share Access:
+#              - User-Guides/Agent-Staff-Guide/index.md
+#              - Give or Get Access to Sites & Plans: Getting-Started/share-access-to-sites-plans.md
+#          - System Guidelines: Getting-Started/system-guidelines.md
+#      - How to Pay Fees:
+#          - Fees/index.md
+
+# Plugins
+plugins:
+  - search
+  - open-in-new-tab
+#
+#markdown_extensions:
+#  - toc:
+#      title: On this Page
+#      toc_depth: 2
+#  - pymdownx.arithmatex:
+#      generic: true
+#  - pymdownx.caret
+#  - pymdownx.mark
+#  - pymdownx.tilde
+#  - pymdownx.details
+#  - admonition
+#  - pymdownx.superfences
+#  - attr_list
+#  - pymdownx.tasklist: # for custom checkboxes
+#        custom_checkbox: true
+#        clickable_checkbox: true
+#  - pymdownx.emoji:
+#      emoji_index: !!python/name:materialx.emoji.twemoji
+#      emoji_generator: !!python/name:materialx.emoji.to_svg
+#      options:
+#        custom_icons:
+#          - overrides/.icons
