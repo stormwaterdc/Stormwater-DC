@@ -31,6 +31,16 @@ header.md-header.md-header--lifted{
         border: 1px;
     }*/
 
+    .md-footer{
+        position: fixed; /* Prevent overlapping content */
+        bottom: 0;
+        width: 100%
+/*        padding: 1em 0;
+        z-index: 1; *//* Ensure footer stays above everything *//*
+        background-color: #f9f9f9;
+        text-align: center;*/
+    }
+
 <!-- Hero section styles-->
 
     .md-main {
@@ -51,6 +61,7 @@ header.md-header.md-header--lifted{
 
     /* Adjust padding and height for hero section */
     .tx-container {
+        width: 100%;
         padding-top: .0rem;
         background: linear-gradient(to bottom, var(--md-primary-fg-color), #10477b 100%);
         box-sizing: border-box;
@@ -208,6 +219,17 @@ header.md-header.md-header--lifted{
         font-size: 1.5rem;
         justify-content: center;
     }
+    .quick-nav-contents {
+        display: flex;           /* Turn the container into a flexbox */
+        justify-content: center; /* Horizontally center .flex-container */
+        align-items: center;     /* Vertically center .flex-container */
+    }
+
+    .quick-nav-container {
+        /*display: flex;*/           /* Turn the container into a flexbox */
+        justify-content: center; /* Horizontally center .flex-container */
+        align-items: center;     /* Vertically center .flex-container */
+    }
 
     .quick-nav-container h2{
         font-size: 1.5rem;
@@ -293,9 +315,11 @@ header.md-header.md-header--lifted{
 		.flex-container {
 			display: flex;
 			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-			margin-left: 10em;
+			align-items: left;
+			justify-content: left;
+			margin-top: 2em;
+			margin-left: 5em;
+			margin-bottom: 5em;
 		}
 		.flex-item {
 			flex: 1 1 23%;
@@ -303,14 +327,15 @@ header.md-header.md-header--lifted{
 			margin-bottom: 5px;
 			border: 0px;
 			border-radius: 5px;
-			height: 175px;
+			height: flex;
+			width: 300px;
 		}
 		.flex-item h3 {
 		    font-size: 20px;
 			font-weight: bold;
-			margin-bottom: 5px;
+			margin: 0 0 5px;
 			text-align: left;
-			padding-bottom: 18px;
+			padding-bottom: 5px;
 		}
 		.flex-item ul {
 			list-style: none;
