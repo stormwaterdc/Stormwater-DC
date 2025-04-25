@@ -69,12 +69,12 @@ nav:
       - Return to the SGS: https://doee.dc.gov/sgs
       - Home: index.md
       - Getting Started:
-          - Getting-Started/index.md
+          - User-Guides/Getting-Started/index.md
           - Create & Manage Your SGS Account: User-Guides/SGS-User-Guide/03-create-manage-account.md
           - Reset Password: User-Guides/SGS-User-Guide/03a-reset-password.md
           - Get & Share Access:
               - User-Guides/Agent-Staff-Guide/index.md
-              - Give or Get Access to Sites & Plans: Getting-Started/share-access-to-sites-plans.md
+              - Give or Get Access to Sites & Plans: User-Guides/Getting-Started/share-access-to-sites-plans.md
           - System Guidelines: User-Guides/SGS-User-Guide/intro.md
       - How to Pay Fees:
           - User-Guides/Fees/index.md
