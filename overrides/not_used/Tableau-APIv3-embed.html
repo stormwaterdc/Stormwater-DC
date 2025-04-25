@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    <script src="./Tableau-APIv3-embed.js"></script>
+    <link rel="stylesheet" href="Tableau-embed.css">
+</head>
+<body>
+    <h1>Embedding API v3</h1>
+    <button onclick="filterStateWashington()">Filter: State=Washington></button>
+    <div id="main" style="width: 1200px">
+        <tableau-viz id="tableauViz" src="https://dataviz1.dc.gov/t/OCTO/views/EcoCounterDashboard/Overview" toolbar="bottom" hide-tabs>
+        </tableau-viz>
+    </div>
+    <h2>message</h2>
+</body>
+</html>
