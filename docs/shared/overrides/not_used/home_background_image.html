@@ -1,0 +1,195 @@
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+{{ super() }}
+<style>
+
+    html, body {
+    overflow: hidden;
+    }
+
+    .tx-container {
+        padding-top: .0rem;
+        background: linear-gradient( rgba(24,114,39, 0.8), rgba(16,71,123, 0.8)), url("anacostia-schlyer-hi-res-16-9.png");
+<!--        background: linear-gradient(to bottom, var(&#45;&#45;md-primary-fg-color), #10477b 100%);-->
+        /* background: var(--md-primary-fg-color); */
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center-center;
+    }
+
+    .tx-hero {
+        /* margin: 32px 2.8rem; */
+        color: var(--md-primary-bg-color);
+        justify-content: center;
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700
+    }
+
+    .tx-hero__content {
+            max-width: 25rem;
+            margin-top: 8.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+
+    .tx-hero__image{
+        display: none;
+    }
+
+    .tx-hero .md-button {
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button--primary {
+        background-color: var(--md-primary-bg-color);
+        color: hsla(280deg, 37%, 48%, 1);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover {
+        background-color: var(--md-accent-fg-color);
+        color: var(--md-default-bg-color);
+        border-color: var(--md-accent-fg-color)
+    }
+
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+
+
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__image{
+            width:30rem;
+            height:30rem;
+            order:1;
+            padding-right: 2.5rem;
+            padding-top: 2rem;
+            display: block;
+        }
+
+        .tx-hero__content {
+            max-width: 22rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+    }
+
+    .text-center {
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 15px;
+        font-family: 'Lato', sans-serif;
+        font-size: 23px;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+
+    .md-typeset img {
+        max-width: 125%;
+    }
+
+
+</style>
+
+  <!-- Hero for landing page -->
+  <section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image"></div>
+        <div class="tx-hero__content">
+          <h1>Stormwater in DC</h1>
+          <p>Learn how to use DOEE's Surface and Groundwater System
+          </p>
+          <a
+            href="{{ page.next_page.url | url }}"
+            title="{{ page.next_page.title | e }}"
+            class="md-button md-button--primary"
+          >
+            User Guides
+          </a>
+          <a
+            href="{{ 'User-Guides/SGS-FAQ/SGS_FAQ_2022/' | url }}"
+            title="Surface and Groundwater System - Frequently Asked Questions"
+            class="md-button"
+          >
+            Frequently Asked Questions
+          </a>
+        </div>
+<!--        <div class="tx-hero__content">-->
+<!--            <h1>SRC Trading in DC</h1>-->
+<!--          <p>Learn how to participate in the Stormwater Retention Credit Trading Program</p>-->
+<!--&lt;!&ndash;          <p>Learn about DOEE's Stormwater Retention Credit Trading Program</p>&ndash;&gt;-->
+<!--          <a-->
+<!--            href="{{ page.next_page.url | url }}"-->
+<!--            title="{{ page.next_page.title | e }}"-->
+<!--            class="md-button md-button&#45;&#45;primary"-->
+<!--          >-->
+<!--            Get Started-->
+<!--          </a>-->
+<!--          <a-->
+<!--            href="{{ 'User-Guides/SGS-FAQ/SGS-FAQ/' | url }}"-->
+<!--            title="Surface and Groundwater System - Frequently Asked Questions"-->
+<!--            class="md-button"-->
+<!--          >-->
+<!--            Frequently Asked Questions-->
+<!--          </a>-->
+<!--        </div>-->
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block header %}
+  <!-- Add scripts that need to run before here -->
+  {{ super() }}
+    <nav class = "md-header__inner md-grid">
+
+    </nav>
+
+
+
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}

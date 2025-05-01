@@ -1,0 +1,211 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<!-- Main site Entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+        <div class="tx-hero">
+            <!--        <div class="tx-hero__image">-->
+            <!--          <img src="assets/product-layers.png" draggable="false">-->
+            <!--        </div>-->
+            <div class="tx-hero__content">
+                <h1> Surface & Groundwater System Guides </h1>
+                <p> Step-by-Step Instructions for the SGS </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class = "icon-nav-container">-->
+<!--        <div class = "icon-navigation" itemtype="https://schema.org/ItemList">-->
+<!--            <ul class = "icon-nav-gallery__grid">-->
+<!--                <li class = "icon-nav-gallery__grid&#45;&#45;image" aria-hidden="true">-->
+<!--                    <a href="User-Guides/Plans">-->
+<!--                        <div class = "icon-holder">-->
+<!--                            <img src="icons/homepage/erosion-sediment-control.svg" alt="logo">-->
+<!--                        </div>-->
+<!--                        <div class = icon-label>Erosion & Sediment Control</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class = "icon-nav-gallery__grid&#45;&#45;image" aria-hidden="true">-->
+<!--                    <a href="">-->
+<!--                        <div class = "icon-holder">-->
+<!--                            <img src="icons/homepage/green-area-ratio.svg" alt="logo">-->
+<!--                        </div>-->
+<!--                        <div class = icon-label>Green Area Ratio</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class = "icon-nav-gallery__grid&#45;&#45;image" aria-hidden="true">-->
+<!--                    <a href="">-->
+<!--                        <div class = "icon-holder">-->
+<!--                            <img src="icons/homepage/stormwater-management.svg" alt="logo">-->
+<!--                        </div>-->
+<!--                        <div class = icon-label>Stormwater Management</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class = "icon-nav-gallery__grid&#45;&#45;image" aria-hidden="true">-->
+<!--                    <a href="">-->
+<!--                        <div class = "icon-holder">-->
+<!--                            <img src="icons/homepage/SRCs-Offv.svg" alt="logo">-->
+<!--                        </div>-->
+<!--                        <div class = icon-label>SRCs & Offv</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class = "icon-nav-gallery__grid&#45;&#45;image" aria-hidden="true">-->
+<!--                    <a href="">-->
+<!--                        <div class = "icon-holder">-->
+<!--                            <img src="icons/homepage/floodplain-management.svg" alt="logo">-->
+<!--                        </div>-->
+<!--                        <div class = icon-label>Floodplain Management</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class = "icon-nav-gallery__grid&#45;&#45;image" aria-hidden="true">-->
+<!--                    <a href="">-->
+<!--                        <div class = "icon-holder">-->
+<!--                            <img src="icons/homepage/wetlands.svg" alt="logo">-->
+<!--                        </div>-->
+<!--                        <div class = icon-label>Wetlands & Streams</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class = "icon-nav-gallery__grid&#45;&#45;image" aria-hidden="true">-->
+<!--                    <a href="">-->
+<!--                        <div class = "icon-holder">-->
+<!--                            <img src="icons/homepage/groundwater-dewatering.svg" alt="logo">-->
+<!--                        </div>-->
+<!--                        <div class = icon-label>Groundwater & Dewatering</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--</section>-->
+
+<!-- Lower Page Quick Navigation Buttons -->
+<section class="quick-nav-container">
+    <div class="quick-nav-contents">
+        <div class="flex-container">
+            <div class="flex-container-row">
+                <div class="flex-item">
+                    <h3>Accounts & Access</h3>
+                    <ul>
+                        <li><a href="User-Guides/SGS-User-Guide/03-create-manage-account">Create & Manage Account</a>
+                        </li>
+                        <li><a href="User-Guides/SGS-User-Guide/03a-reset-password">Reset Password</a></li>
+                        <li><a href="#">Get & Share Access</a></li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>Inspections & Maintenance</h3>
+                    <ul>
+                        <li><a href="#">Self-Inspection Self-Reporting</a></li>
+                        <li><a href="#">BMP Maintenance Guidance</a></li>
+                        <li><a href="#">Check Inspection Status</a></li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>ESC & GAR Plans</h3>
+                    <ul>
+                        <li><a href="SGS_INSTRUCTIONS/Instructions for ESC and GAR.pdf">How to Submit ESC and GAR
+                            Plans</a></li>
+                        <li><a href="#">GAR checklist</a></li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>SWM Plans</h3>
+                    <ul>
+                        <li>
+                            <a href="SGS_INSTRUCTIONS/Instructions for submitting Stormwater Management Plans to DOEE for Electronic plan approval.pdf">How
+                                to Submit SWMPs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container-row">
+                <div class="flex-item">
+                    <h3>Certify SRCs</h3>
+                    <ul>
+                        <li><a href="SGS_INSTRUCTIONS/Certify SRCs - SGS Application Guide.pdf">Submit a new SRC
+                            Certification</a></li>
+                        <li><a href="SGS_INSTRUCTIONS/Certify SRCs - Maintenance Agreement Guide.pdf">Maintenance
+                            Agreement Guide</a></li>
+                        <li><a href="SGS_INSTRUCTIONS/Certify SRCs - Application Checklist.pdf">Application
+                            Checklist</a></li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>Transfer SRCs</h3>
+                    <ul>
+                        <li><a href="SGS_INSTRUCTIONS/Transfer-SRCs-SGS-User-Guide.pdf">Transfer SRCs to a new owner</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>Use SRCs</h3>
+                    <ul>
+                        <li><a href="SGS_INSTRUCTIONS/Use SRCs - SGS User Guide.pdf">Use SRCs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--        <div class="flex-container">-->
+<!--            <div class="flex-item">-->
+<!--                <h3>Accounts & Access</h3>-->
+<!--                <ul>-->
+<!--                    <li><a href="User-Guides/SGS-User-Guide/03-create-manage-account">Create & Manage Account</a></li>-->
+<!--                    <li><a href="User-Guides/SGS-User-Guide/03a-reset-password">Reset Password</a></li>-->
+<!--                    <li><a href="#">Get & Share Access</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="flex-item">-->
+<!--                <h3>Sites & Plans</h3>-->
+<!--                <ul>-->
+<!--                    <li><a>Under Construction</a></li>-->
+<!--                    <li><a> </a></li>-->
+<!--                    <li><a> </a></li>-->
+<!--                    &lt;!&ndash;<li><a href="#">Erosion & Sediment Control (ESC)</a></li>-->
+<!--                    <li><a href="#">Stormwater Management (SWMP)</a></li>-->
+<!--                    <li><a href="#">Green Area Ratio (GAR)</a></li>&ndash;&gt;-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="flex-item">-->
+<!--                <h3>&nbsp</h3>-->
+<!--                <ul>-->
+<!--&lt;!&ndash;                    <li><a href="#">Transfer SRCs</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li><a href="#">Use SRCs</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li><a href="#">Certify SRCs</a></li>&ndash;&gt;-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="flex-item">-->
+<!--                <h3>Inspections & Maintenance</h3>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Self-Inspection Self-Reporting</a></li>-->
+<!--                    <li><a href="#">BMP Maintenance Guidance</a></li>-->
+<!--                    <li><a href="#">Check Inspection Status</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+{% endblock %}
+{% block content %}{% endblock %}
+
+{% block htmltitle %}
+<title>
+    Stormwater in District of Columbia
+</title>
+{{ super() }}
+{% endblock %}
+
+
+
+
+
+

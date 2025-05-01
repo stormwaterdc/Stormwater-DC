@@ -1,0 +1,522 @@
+/*
+  Home Page Styles
+  Author: Lukin Jacob
+
+  Description: This CSS file provides CSS code to style the home.html page
+
+*/
+
+<!-- Headers section styles-->
+
+header.md-header.md-header--lifted{
+        background-color: rgb(242, 242, 242);
+}
+
+ /*  section.new-header {
+        background-color: rgb(242, 242, 242);
+    }
+
+   .new-header h1 .header-banner-item {
+        float: left;
+        font-size: 1rem;
+   }
+
+    .new-header h1 .header-banner-item img, header h1 .header-logo img {
+        display: block;
+        width: auto;
+        height: 1.5rem;
+        margin: 10px;
+        padding: 0;
+        border-color: black;
+        border: 1px;
+    }*/
+
+    .md-footer{
+        position: relative; /* Prevent overlapping content */
+        bottom: 0;
+        width: 100%
+/*        padding: 1em 0;
+        z-index: 1; *//* Ensure footer stays above everything *//*
+        background-color: #f9f9f9;
+        text-align: center;*/
+    }
+
+<!-- Hero section styles-->
+
+    .md-main {
+        flex-grow: 0
+    }
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    /* Use a linear gradient background */
+    .md-container{
+/*
+    background: linear-gradient(to bottom, var(--md-primary-fg-color), #10477b 100%);
+*/
+    }
+
+    /* Adjust padding and height for hero section */
+    .tx-container {
+        width: 100%;
+        padding-top: .0rem;
+        background: linear-gradient(to bottom, var(--md-primary-fg-color), #10477b 100%);
+        box-sizing: border-box;
+       /*padding-bottom: 1.5rem;*/
+    }
+
+/* Style for hero section */
+    .tx-hero {
+        margin: 32px 2.8rem;
+        color: var(--md-primary-bg-color);
+        justify-content: center;
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700
+    }
+
+    .tx-hero__content {
+       /* padding-bottom: 1rem;*/
+        margin: 0 auto;
+    }
+
+    .tx-hero__content p {
+        color: rgb(255,255,255);
+    }
+
+    .tx-hero__image{
+        width:17rem;
+        height:17rem;
+        order:1;
+        padding-right: 2.5rem;
+    }
+
+    /* Style buttons in hero section */
+
+    .tx-hero .md-button {
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-bg-color)
+    }
+
+    /* Primary button in hero section */
+    .tx-hero .md-button--primary {
+        background-color: var(--md-primary-bg-color);
+        color: hsla(280deg, 37%, 48%, 1);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    /* Style for focused and hovered hero section buttons */
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover {
+        background-color: var(--md-accent-fg-color);
+        color: var(--md-default-bg-color);
+        border-color: var(--md-accent-fg-color)
+    }
+
+    /* Quick Navigation Section Styles */
+
+    /* Nav Section */
+
+    .icon-nav-container{
+        background: rgb(242, 242, 242);
+        width:100%;
+        height:100%
+    }
+
+    .icon-navigation{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        color : black;
+        font-weight: 600;
+        font-size: 1.5rem;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+   .icon-navigation ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    }
+
+    .icon-nav-gallery__grid li{
+    display:flex;
+    flex-direction:column; /* stack icon and text together */
+    width: 200px;
+    }
+
+    .icon-nav-gallery__grid {
+      display: flex;
+      font-family: 'Calibri';
+      box-sizing: border-box;
+      padding: 0 15px;
+      word-break: break-word;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      width: 100%;
+      height: 100%;
+    }
+/*
+     .nav-item {
+        font-family: 'Century Gothic';
+        height: 75px;
+        display:block;
+    }*/
+
+    .icon-label {
+/*
+*/
+        position: relative;
+        text-align: center;
+        font-size: 16px;
+        white-space: normal;
+        font-weight: 525;
+        flex-grow:1; /* allows text to wrap*/
+    }
+
+    .icon-holder {
+        position: relative;
+        text-align: center;
+        white-space: normal;
+        float: none;
+        align-items: center;
+    }
+
+    .icon-holder img{
+        width: 3em;
+    }
+
+    /* Style for quick navigation container */
+
+    .quick-nav-header{
+    /* Style for quick navigation header */
+        background-color: #fff;
+        font-size: 5rem;
+    }
+
+    .top-hr {
+        margin-top: 1rem;
+    }
+
+
+    .top-hr h2 {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        color : black;
+        font-weight: 600;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+    .quick-nav-contents {
+        display: flex;           /* Turn the container into a flexbox */
+        justify-content: center; /* Horizontally center .flex-container */
+        align-items: center;     /* Vertically center .flex-container */
+    }
+
+    .quick-nav-container {
+        /*display: flex;*/           /* Turn the container into a flexbox */
+        justify-content: center; /* Horizontally center .flex-container */
+        align-items: center;     /* Vertically center .flex-container */
+    }
+
+    .quick-nav-container h2{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+
+    /* Style for cards */
+    .card-holder {
+        position: relative;
+        border: 1px solid #10477b;
+        text-align: center;
+        height: 7.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+        white-space: normal;
+        background-color:#fff
+    }
+
+    .card-holder:hover{
+    background-color: #E8F0FE;
+    }
+
+    .card-holder h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0rem;
+    }
+
+    .feature-item {
+        font-family: 'Century Gothic';
+        font-weight: 300;
+        box-sizing: border-box;
+        padding: 0 15px;
+        word-break: break-word
+    }
+
+    .feature-item h2 svg {
+            height: 30px;
+            float: left;
+            margin-right: 10px;
+            transform: translateY(10%);
+        }
+
+    .feature-item h2 {
+        color: blue;
+        font-weight: 300;
+        font-size: 25px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-family: inherit;
+        text-align: center;
+        border-color: #1a4480;
+        line-height: 1.3;
+    }
+
+    .feature-item p {
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.8em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        color: #111;
+        margin: 0 0 10px;
+        display: block;
+        padding: .5rem;
+    }
+
+    .feature-item p a{
+        color: blue;
+    }
+
+/*    .feature-item p a:focus, a:hover{
+        color: var(--md-accent-fg-color);
+    }*/
+
+    /* Style for Popular Topics Flex Grid */
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: left;
+			justify-content: left;
+			margin-top: 2em;
+			margin-left: 5em;
+			margin-bottom: 5em;
+		}
+		.flex-item {
+			flex: 1 1 23%;
+			padding: 10px;
+			margin-bottom: 5px;
+			border: 0px;
+			border-radius: 5px;
+			height: flex;
+			width: 300px;
+		}
+		.flex-item h3 {
+		    font-size: 20px;
+			font-weight: bold;
+			margin: 0 0 5px;
+			text-align: left;
+			padding-bottom: 5px;
+		}
+		.flex-item ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.flex-item li {
+			margin-bottom: 5px;
+			font-size: 14px;
+			padding: 2px;
+		}
+
+		.flex-item a {
+			text-decoration: none;
+			color: blue;
+		}
+
+        .flex-item a:hover {
+			text-decoration: underline;
+            background-color: transparent;
+		}
+
+
+
+
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 950px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            .flex-item {
+                flex: 1 0 auto;
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+
+    /* MEDIA QUERIES TO ADJUST STYLE BASED ON SCREEN SIZE */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+    @media screen and (max-width:600px) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+
+         .icon-nav-fgallery__grid{
+            gap: .25rem;
+            width: 100%;
+            display: flex;
+            flex-direction:column;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+    }
+
+/* Medium devices (landscape tablets, 768px and up) */
+    @media screen and (min-width:768px) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__content {
+            max-width: 65%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+
+         .icon-nav-gallery__grid{
+            gap: 2rem;
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+    }
+
+/* Large devices (laptops/desktops, 992px and up) */
+    @media screen and (min-width:992px) {
+        .md-sidebar--primary {
+            display: none
+        }
+
+        .icon-nav-gallery__grid{
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .top-hr {
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .bottom-hr {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 0;
+        }
+    }
+
+
+    .text-center {
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 15px;
+        font-family: 'Century Gothic';
+        font-size: 23px;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+
+    .logos img {
+        flex: 1 1 auto;
+        padding: 25px;
+        max-height: 130px;
+        vertical-align: middle;
+    }
+
+    .hr-logos {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .md-footer-meta__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1.0rem;
+    }
+
+    .md-footer-social {
+        padding-top: 20px;
+        }
+
+/* Home screen content */
+.tx-hero__content{
+    text-align:center;
+    max-width: 50em;
+}
+
