@@ -1,6 +1,6 @@
 site_name: Stormwater in District of Columbia
 site url: https://srctrading.org/
-# site_description: Learn about using DOEE's Surface and Groundwater System
+site_description: Instructions for DOEE's Surface and Groundwater System
 
 extra_css:
   - shared/css/extra.css
